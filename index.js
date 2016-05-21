@@ -10,6 +10,7 @@ $(function() {
       width = 200,
       height = 0;
 
+
   navigator.getMedia = ( navigator.getUserMedia || 
                          navigator.webkitGetUserMedia ||
                          navigator.mozGetUserMedia ||
@@ -37,21 +38,25 @@ $(function() {
   video.addEventListener('canplay', function(ev){
     if (!streaming) {
       height = video.videoHeight / (video.videoWidth/width);
-      video.setAttribute('width', width);
-      video.setAttribute('height', height);
-      canvas.setAttribute('width', width);
-      canvas.setAttribute('height', height);
+      // video.setAttribute('width', width);
+      // video.setAttribute('height', height);
+      // canvas.setAttribute('width', width);
+      // canvas.setAttribute('height', height);
       streaming = true;
     }
   }, false);
-
   function takepicture() {
-    canvas.width = width;
-    canvas.height = height;
-    var d = canvas.getContext('2d');
-    d.drawImage(video, 0, 0, width, height);
-    var data = canvas.toDataURL('image/png');
-    photo.setAttribute('src', data);
+$("body").addClass("showimage")
+canvas.height= video.videoHeight;
+canvas.width = video.videoWidth;
+    var ctx=canvas.getContext("2d");
+    ctx.drawImage(video,0,0);
+    // canvas.width = width;
+    // canvas.height = height;
+    // var d = canvas.getContext('2d');
+    // d.drawImage(video, 0, 0, width, height);
+    // var data = canvas.toDataURL('image/png');
+    // photo.setAttribute('src', data);
   }
 
   startbutton.addEventListener('click', function(ev){
@@ -62,6 +67,8 @@ $(".filter").click(function(){
   var classname = $(this).val();
   $(".vid-img").toggleClass(classname)
   });
-
+function addimage(source){
+  
+}
 });
 

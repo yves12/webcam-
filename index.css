@@ -3,9 +3,6 @@ html {
     height: 100%;
     background: linear-gradient( #333, #000);
 }
-canvas {
-    display: none;
-}
 #video{
     height:800px;
    width:800px;
@@ -52,4 +49,13 @@ img, #startbutton {
 .bright {
     -webkit-filter:brightness(160%);
     filter: brightness(160%);
+}
+.showimage video{
+ display:none;
+}
+.showimage canvas{
+ display:block;
+}
+canvas{
+ display:none;
 }
