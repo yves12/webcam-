@@ -1,0 +1,148 @@
+body {
+    background-image: url("https://cloud.githubusercontent.com/assets/10789523/15449376/28f58c86-1f4a-11e6-823f-52ae92e81640.jpg");
+}
+
+.dogs {
+    text-align: center;
+    line-height: 80px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.cats {
+    border-radius: 25px;
+}
+
+.ducks {
+    background-color: red;
+}
+
+h2 {
+    text-align: center;
+}
+
+#blur-checkbox {
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+}
+
+#grayscale-checkbox {
+    color: white;
+    border-radius: 25px;
+}
+
+#hue-checkbox {
+    background-color: yellow;
+    color: white;
+    border-radius: 25px;
+}
+
+#saturate-checkbox {
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+}
+
+#sepia-checkbox {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+}
+
+#invert-checkbox {
+    background-color: purple;
+    color: white;
+    border-radius: 25px;
+}
+
+.state-icon {
+    left: -5px;
+}
+
+.list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+}
+
+
+/* DEMO ONLY - REMOVES UNWANTED MARGIN */
+
+.well .list-group {
+    margin-bottom: 0px;
+}
+
+.camera-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 15.5px solid #fff;
+    font-family: Cambria;
+    font-size: 11px;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    background: red;
+    margin-right:20px;
+}
+
+#video {
+    width: 100%;
+    background-color: white;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+#canvas {
+    display: none;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+.col-xs-4 h3 {
+    height: 26px;
+}
+
+
+
+.hue{
+  -webkit-filter:hue-rotate(180deg);
+  filter:hue-rotate(180deg);
+}
+.blur{
+  -webkit-filter:blur(5px);
+  filter:blur(5px);
+}
+.gray{
+  -webkit-filter:grayscale(100%);
+  filter:gratscale(100%);
+}
+.sat{
+  -webkit-filter:saturate(300%);
+  filter:saturate(300%);
+}
+.sep{
+  -webkit-filter:sepia(100%);
+  filter:sepia(100%);
+}
+.bright {
+    -webkit-filter:brightness(160%);
+    filter: brightness(160%);
+}
+
+
+ #image-overlay { width: 100%;
+     position: absolute;
+ }
+ 
+ .thumb{
+  width:100%;
+}
+
+.thumbimg{
+  width:100%;
+}

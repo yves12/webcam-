@@ -4,8 +4,8 @@ html {
     background: linear-gradient( #333, #000);
 }
 #video{
-    height:800px;
-   width:800px;
+    height:900px;
+   width:900px;
 }
 img, #startbutton {
     display: block;
