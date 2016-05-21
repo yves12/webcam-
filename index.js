@@ -47,8 +47,10 @@
   function takepicture() {
     canvas.width = width;
     canvas.height = height;
-    video.blur = filterSelect.value;
-    canvas.getContext('2d').drawImage(video, 0, 0, width, height);
+   // video.blur = filterSelect.value;
+    var d = canvas.getContext('2d');
+    d.filter = "sepia(0.8)";
+    d.drawImage(video, 0, 0, width, height);
     var data = canvas.toDataURL('image/png');
     photo.setAttribute('src', data);
   }

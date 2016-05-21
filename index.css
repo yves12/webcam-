@@ -33,3 +33,6 @@ img, #startbutton {
     -webkit-filter: blur(3px);
    filter: blur(3px); 
 }
+#button{
+color:red;
+}
