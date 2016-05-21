@@ -3,14 +3,21 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="index.css">
+<script  src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
 </head>
     
     <body>
-<input type="checkbox" id="button" value="first_checkbox">Blurry filter<br>
-<video id="video" class="blur"></video>
+<input type="checkbox" class="filter" value="blur"> Blur<br>
+<input type="checkbox" class="filter" value="hue"> Hue<br>
+<input type="checkbox" class="filter" value="gray"> Gray<br>
+<input type="checkbox" class="filter" value="invert"> Invert<br>
+<input type="checkbox" class="filter" value="sat"> Sat<br>
+<input type="checkbox" class="filter" value="sep"> Sep<br>
+<input type="checkbox" class="filter" value="bright"> Bright<br>
+<video id="video" class="vid-img"></video>
 <button id="startbutton">Take photo</button>
 <canvas id="canvas"></canvas>
-<img src="https://placekitten.com/g/200/150" id="photo" alt="photo" class="blur">
+<img src="https://placekitten.com/g/200/150" id="photo" alt="photo" class="vid-img" >
 <script type="text/javascript" src="index.js"></script>  
     </body>
 

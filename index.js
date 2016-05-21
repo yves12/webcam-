@@ -1,4 +1,5 @@
-(function() {
+
+$(function() {
 
   var streaming = false,
       video        = document.querySelector('#video'),
@@ -47,9 +48,7 @@
   function takepicture() {
     canvas.width = width;
     canvas.height = height;
-   // video.blur = filterSelect.value;
     var d = canvas.getContext('2d');
-    d.filter = "sepia(0.8)";
     d.drawImage(video, 0, 0, width, height);
     var data = canvas.toDataURL('image/png');
     photo.setAttribute('src', data);
@@ -59,6 +58,10 @@
       takepicture();
     ev.preventDefault();
   }, false);
+$(".filter").click(function(){
+  var classname = $(this).val();
+  $(".vid-img").toggleClass(classname)
+  });
 
-})();
+});
 
